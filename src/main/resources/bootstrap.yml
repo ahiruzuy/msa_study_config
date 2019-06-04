@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ahiruzuy/msa_study_config
+          uri: https://github.com/ahiruzuy/msa_study_config/
 
 #spring:
 #  cloud:
