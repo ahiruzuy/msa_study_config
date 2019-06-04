@@ -6,6 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: http://192.168.0.41/hsjang/msa_study_config
-          username: msa-dev
-          password: 7fT9aMsK3kQzsojcKsDV
+#          uri: https://github.com/ahiruzuy/msa_study_config.git
+          uri: file://C:\Users\HS\IdeaProjects\config-server
+#          username: config
+#          password: 792bd7ad49c5153710b3aee6b763d405f006c610
