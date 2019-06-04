@@ -10,17 +10,17 @@ zuul:
     useSeparateThreadPools: true
 
 
-#service-hello:
-#  ribbon:
-#    eureka:
-#      enabled: true
-#    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
-#    ConnectTimeout: 3000
-#    ReadTimeout: 5000
-#    MaxTotalHttpConnections: 500
-#    MaxConnectionsPerHost: 100
-#    MaxAutoRetriesNextServer: 1
-#    MaxAutoRetries: 0
+service-hello:
+  ribbon:
+    eureka:
+      enabled: true
+    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+    ConnectTimeout: 3000
+    ReadTimeout: 5000
+    MaxTotalHttpConnections: 500
+    MaxConnectionsPerHost: 100
+    MaxAutoRetriesNextServer: 1
+    MaxAutoRetries: 0
 
 
 
