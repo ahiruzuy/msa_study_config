@@ -1,0 +1,49 @@
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    service-hello:
+      path: /service-hello/**
+      serviceId: service-hello
+  ribbonIsolationStrategy: THREAD
+  threadPool:
+    useSeparateThreadPools: true
+
+
+service-hello:
+  ribbon:
+    eureka:
+      enabled: true
+    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+    ConnectTimeout: 3000
+    ReadTimeout: 5000
+    MaxTotalHttpConnections: 500
+    MaxConnectionsPerHost: 100
+    MaxAutoRetriesNextServer: 1
+    MaxAutoRetries: 0
+
+
+
+hystrix:
+  command:
+    service-hello:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 16000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+eureka:
+  client:
+    healthcheck: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      perferIpAddress: true
