@@ -5,10 +5,4 @@ spring:
         git:
           uri: https://github.com/ahiruzuy/msa_study_config
           refresh-rate: 10
-#          searchLocations: classpath:/config
-
-test:
-  profile: i'm dev
-  said:
-    first: Hello
-    second: Config Server
+          search-paths: classpath:/config
