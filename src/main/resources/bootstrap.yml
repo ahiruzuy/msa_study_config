@@ -6,6 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ahiruzuy/msa_study_config
+          uri: https://github.com/ahiruzuy/msa_study_config/
           private-key: 8aab8f7ca6a9332eff840474a8c0b70c130ab0db
           username: config
