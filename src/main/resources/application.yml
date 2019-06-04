@@ -4,7 +4,7 @@ spring:
       server:
         git:
           uri: https://github.com/ahiruzuy/msa_study_config
-          searchLocations: classpath:/config
+#          searchLocations: classpath:/config
 
 test:
   profile: i'm dev
