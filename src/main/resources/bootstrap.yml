@@ -11,6 +11,7 @@ spring:
         git:
           uri: https://github.com/ahiruzuy/msa_study_config
           search-paths: configs
+          force-pull: true
 
 #        native:
 #          search-locations: classpath:configs/

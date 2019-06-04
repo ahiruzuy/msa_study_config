@@ -1,13 +1,13 @@
-zuul:
-  ignored-services: '*'
-  prefix: /api
-  routes:
-    service-hello:
-      path: /service-hello/**
-      serviceId: service-hello
-  ribbonIsolationStrategy: THREAD
-  threadPool:
-    useSeparateThreadPools: true
+#zuul:
+#  ignored-services: '*'
+#  prefix: /api
+#  routes:
+#    service-hello:
+#      path: /service-hello/**
+#      serviceId: service-hello
+#  ribbonIsolationStrategy: THREAD
+#  threadPool:
+#    useSeparateThreadPools: true
 
 service-hello:
   ribbon:
