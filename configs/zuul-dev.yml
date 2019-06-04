@@ -3,7 +3,7 @@ zuul:
   prefix: /api
   routes:
     service-hello:
-      path: /servicehello/**
+      path: /service-hello/**
       serviceId: service-hello
   ribbonIsolationStrategy: THREAD
   threadPool:
