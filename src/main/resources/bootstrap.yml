@@ -9,9 +9,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ahiruzuy/msa_study_config
+          uri: https://github.com/ahiruzuy/msa_study_config/
 #          refresh-rate: 10
-#          search-paths: classpath:/config
+          search-paths: '*,{application},config/{application}, config/, config/*'
 
 management:
   endpoints:
