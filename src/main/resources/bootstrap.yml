@@ -5,6 +5,26 @@ spring:
   application:
     name: config-server
 
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ahiruzuy/msa_study_config
+#          refresh-rate: 10
+#          search-paths: classpath:/config
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+
 #spring:
 #  cloud:
 #    config:
