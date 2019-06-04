@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: config-server
+    name: configs-server
 
   cloud:
     config:
@@ -11,7 +11,7 @@ spring:
         git:
           uri: https://github.com/ahiruzuy/msa_study_config/
 #          refresh-rate: 10
-          search-paths: '*,{application},config/{application}, config/, config/*'
+          searchPaths: '{application}/{profile}'
 
 management:
   endpoints:
@@ -27,9 +27,9 @@ management:
 
 #spring:
 #  cloud:
-#    config:
+#    configs:
 #      server:
 #        git:
 #          uri: https://github.com/ahiruzuy/msa_study_config/
 #          private-key: 8aab8f7ca6a9332eff840474a8c0b70c130ab0db
-#          username: config
+#          username: configs
