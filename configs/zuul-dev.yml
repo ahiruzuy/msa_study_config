@@ -9,7 +9,6 @@ zuul:
   threadPool:
     useSeparateThreadPools: true
 
-
 service-hello:
   ribbon:
     eureka:
@@ -21,8 +20,6 @@ service-hello:
     MaxConnectionsPerHost: 100
     MaxAutoRetriesNextServer: 1
     MaxAutoRetries: 0
-
-
 
 hystrix:
   command:
