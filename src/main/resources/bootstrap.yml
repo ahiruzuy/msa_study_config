@@ -10,7 +10,7 @@ spring:
       server:
         git:
           uri: https://github.com/ahiruzuy/msa_study_config
-          search-paths: '*/configs/*'
+          search-paths: configs
 
 #        native:
 #          search-locations: classpath:configs/
