@@ -3,6 +3,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ahiruzuy/msa_study_config/
+          uri: https://github.com/ahiruzuy/msa_study_config
           search-paths:
             - "config-server-properties/{application}/{profile}"
