@@ -4,8 +4,8 @@ eureka:
     appname: eureka-app
 #    prefer-ip-address: true
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-server2:8762/eureka/
 
