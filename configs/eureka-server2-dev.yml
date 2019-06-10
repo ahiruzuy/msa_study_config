@@ -2,12 +2,11 @@ eureka:
   instance:
     hostname: eureka-server2
     appname: eureka-app
-#    prefer-ip-address: true
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka-server1:8761/eureka/
+      defaultZone: http://eureka-server1:8761
 
 management:
   endpoints:
