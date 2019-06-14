@@ -8,13 +8,11 @@ spring:
     config:
       server:
         git:
-          uri: http://192.168.0.41/hsjang/msa_study_config.git
+          uri: http://192.168.0.41/msa-study/config-server.git
           search-paths: configs
           force-pull: true
           username: msa-config-dev
           password: qRTVLjnk-AHSQ1ovL1Eo
-#          username: config
-#          private-key: 8aab8f7ca6a9332eff840474a8c0b70c130ab0db
 
 #        native:
 #          search-locations: classpath:configs/
@@ -26,18 +24,3 @@ management:
     web:
       exposure:
         include: '*'
-
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: '*'
-
-#spring:
-#  cloud:
-#    configs:
-#      server:
-#        git:
-#          uri: https://github.com/ahiruzuy/msa_study_config/
-#          private-key: 8aab8f7ca6a9332eff840474a8c0b70c130ab0db
-#          username: config

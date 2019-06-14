@@ -49,4 +49,4 @@ eureka:
 gateway:
   zuul:
     filters:
-      base-path: /filters/
+      base-path: /path/to/filter/
