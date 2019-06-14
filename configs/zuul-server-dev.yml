@@ -49,4 +49,4 @@ eureka:
 gateway:
   zuul:
     filters:
-      base-path: src\main\java\com\zuul\zuulserver\filters
+      base-path: zuul-server\src\main\java\com\zuul\zuulserver\filters
