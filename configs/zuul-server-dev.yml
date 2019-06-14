@@ -49,4 +49,4 @@ eureka:
 gateway:
   zuul:
     filters:
-      base-path: /path/to/filter/
+      base-path: http://192.168.0.41/msa-study/servers/tree/master/zuul-server
