@@ -5,6 +5,9 @@ zuul:
     service-hello:
       path: /service-hello/**
       serviceId: service-hello
+    service-bye:
+      path: /service-bye/**
+      serviceId: service-bye
   ribbonIsolationStrategy: THREAD
   threadPool:
     useSeparateThreadPools: true
