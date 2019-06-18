@@ -2,8 +2,6 @@ eureka:
   instance:
     hostname: eureka-server1
     appname: eureka-app
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
   client:
     registerWithEureka: true
     fetchRegistry: true

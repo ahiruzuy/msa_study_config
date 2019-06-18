@@ -1,5 +1,7 @@
 eureka:
   client:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
     healthcheck:
       enabled:
     fetch-registry: true
