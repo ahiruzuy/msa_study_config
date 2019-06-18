@@ -2,11 +2,15 @@ eureka:
   instance:
     hostname: eureka-server1
     appname: eureka-app
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-server2:8762/eureka
+  server:
+    enableSelfPreservation: false
 
 management:
   endpoints:
