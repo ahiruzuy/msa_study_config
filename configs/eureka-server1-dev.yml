@@ -7,6 +7,9 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-server2:8762/eureka
+  server:
+    enableSelfPreservation: false
+
 
 management:
   endpoints:
