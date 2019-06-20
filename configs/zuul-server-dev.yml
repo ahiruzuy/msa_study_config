@@ -23,6 +23,7 @@ service-hello:
     MaxConnectionsPerHost: 100
     MaxAutoRetriesNextServer: 1
     MaxAutoRetries: 0
+    retryableStatusCodes: 503
 
 service-bye:
   ribbon:
