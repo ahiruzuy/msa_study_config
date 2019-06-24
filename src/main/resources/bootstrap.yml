@@ -16,8 +16,8 @@ spring:
   rabbitmq:
     host: 192.168.0.47
     port: 5672
-    username: guest
-    password: guest
+    username: config
+    password: config
 
 #        native:
 #          search-locations: classpath:configs/
