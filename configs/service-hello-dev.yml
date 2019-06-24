@@ -11,7 +11,7 @@ eureka:
 #    leaseExpirationDurationInSeconds: 2
 
 message:
-  act: "hello-bus-test"
+  act: "hello-init"
 
 logging:
   level:
