@@ -2,8 +2,8 @@ spring:
   rabbitmq:
     host: 192.168.0.47
     port: 5672
-    username: config
-    password: config
+    username: guest
+    password: guest
 
 eureka:
   client:
