@@ -10,6 +10,9 @@ eureka:
 #    leaseRenewalIntervalInSeconds: 1
 #    leaseExpirationDurationInSeconds: 2
 
+message:
+  act: "hello-init"
+
 logging:
   level:
     org.springframework.web: DEBUG
