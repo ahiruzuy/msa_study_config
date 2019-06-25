@@ -18,7 +18,7 @@ eureka:
 #    leaseExpirationDurationInSeconds: 2
 
 message:
-  act: "hello-bus-webhook-test8"
+  act: "hello-bus-webhook-test1"
 
 logging:
   level:
