@@ -1,3 +1,10 @@
+spring:
+  rabbitmq:
+    host: 192.168.0.47
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   client:
     healthcheck:
@@ -7,6 +14,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/, http://localhost:8762/eureka/
     instance:
       perferIpAddress: true
+#    leaseRenewalIntervalInSeconds: 1
+#    leaseExpirationDurationInSeconds: 2
+
+message:
+  act: "hello-bus-webhook-test5"
 
 logging:
   level:

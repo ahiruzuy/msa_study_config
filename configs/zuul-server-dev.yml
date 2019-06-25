@@ -23,6 +23,19 @@ service-hello:
     MaxConnectionsPerHost: 100
     MaxAutoRetriesNextServer: 1
     MaxAutoRetries: 0
+    retryableStatusCodes: 503
+
+service-bye:
+  ribbon:
+    eureka:
+      enabled: true
+    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+    ConnectTimeout: 3000
+    ReadTimeout: 5000
+    MaxTotalHttpConnections: 500
+    MaxConnectionsPerHost: 100
+    MaxAutoRetriesNextServer: 1
+    MaxAutoRetries: 0
 
 service-bye:
   ribbon:
