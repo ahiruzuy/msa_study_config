@@ -10,7 +10,7 @@ spring:
         git:
           uri: https://github.com/ahiruzuy/msa_study_config.git
   #          uri: http://192.168.0.41/msa-study/config-server.git
-#          search-paths: configs
+          search-paths: configs
 #          force-pull: true
 #          username: msa-config-dev
 #          password: qRTVLjnk-AHSQ1ovL1Eo
