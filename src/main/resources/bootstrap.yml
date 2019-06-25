@@ -8,11 +8,14 @@ spring:
     config:
       server:
         git:
-          uri: http://192.168.0.41/msa-study/config-server.git
-          search-paths: configs
-          force-pull: true
-          username: msa-config-dev
-          password: qRTVLjnk-AHSQ1ovL1Eo
+          uri: https://github.com/ahiruzuy/msa_study_config.git
+          username: ahiruzuy
+          password: YuzYuz1212
+  #          uri: http://192.168.0.41/msa-study/config-server.git
+#          search-paths: configs
+#          force-pull: true
+#          username: msa-config-dev
+#          password: qRTVLjnk-AHSQ1ovL1Eo
   rabbitmq:
     host: 192.168.0.47
     port: 5672
